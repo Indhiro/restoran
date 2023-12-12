@@ -6,10 +6,8 @@ var con = mysql.createConnection({
     user: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     database: process.env.DATABASE,
-    port: process.env.PORT,
+    port: process.env.DB_PORT,
 });
-
-console.log(con);
 
 con.connect(function (err) {
     if (err) throw err;
